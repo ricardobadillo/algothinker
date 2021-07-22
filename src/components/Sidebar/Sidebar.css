@@ -1,0 +1,34 @@
+.dashboard {
+    margin-right: .5rem;
+}
+
+.icons {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1.75rem;
+    height: 80px;
+}
+
+@media (max-width:680px) {
+    .icons{
+        font-size: 1.5rem;
+    }
+}
+
+.icons:hover {
+    color: #000000;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 2rem;
+    height: 80px;
+    margin-left: .75rem;
+}
+
+@media (min-width: 240px) and (max-width: 395px) {
+    .logo{
+        font-size: 1.75rem;
+        margin-left: .5rem;
+    }
+}

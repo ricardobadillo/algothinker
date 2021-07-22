@@ -1,0 +1,124 @@
+.hero {
+  position: relative;
+  background-color: #001233;
+  height: 100vh;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+
+  .wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .innerWrapper {
+      width: 60%;
+      text-align: center;
+
+      h1 {
+        font-size: 3rem;
+        color: #FFF;
+
+        @media (max-width: 768px ) {
+          font-size: 2.5rem;
+          color: #FFF;
+        }
+      }
+
+      h2 {
+        font-size: 2rem;
+        color: #FFF;
+        margin-top: 1rem;
+
+        @media (max-width: 768px ) {
+          font-size: 1.25rem;
+          color: #FFF;
+        }
+      }
+    }
+  }
+}
+
+.shortDescriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: space-around;
+  background-color: #f8f9fa;
+
+  .description {
+    align-items: center;
+    color: #0353A4;
+    display: flex;
+    flex-direction: column;
+    font-size: 3.5rem;
+    justify-content: center;
+    margin: 0rem 3rem;
+    padding: 2rem;
+
+    p,
+    h2 {
+      color: black;
+      text-align: center;
+    }
+
+    h2 {
+      padding: 1rem;
+      font-family: "Lato", sans-serif;
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-family: "Lato", sans-serif;
+      font-weight: lighter;
+    }
+  }
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: "Lato", sans-serif;
+  $minHeight: 200px;
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    img {
+      width: 100%;
+      min-height: $minHeight;
+    }
+
+    .fullDesc {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: $minHeight;
+      width: 100%;
+
+      .wrapper {
+        margin: 0rem 2.5rem;
+        padding: 4rem;
+        text-align: center;
+      }
+
+      h2 {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        font-weight: lighter;
+      }
+    }
+  }
+}

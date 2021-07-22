@@ -1,0 +1,159 @@
+.hero {
+  position: relative;
+  background-color: #001233;
+  height: 100vh;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+.hero .wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .wrapper .innerWrapper {
+  width: 60%;
+  text-align: center;
+}
+
+.hero .wrapper .innerWrapper h1 {
+  font-size: 3rem;
+  color: #FFF;
+}
+
+@media (max-width: 768px) {
+  .hero .wrapper .innerWrapper h1 {
+    font-size: 2.5rem;
+    color: #FFF;
+  }
+}
+
+.hero .wrapper .innerWrapper h2 {
+  font-size: 2rem;
+  color: #FFF;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero .wrapper .innerWrapper h2 {
+    font-size: 1.25rem;
+    color: #FFF;
+  }
+}
+
+.shortDescriptions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #f8f9fa;
+}
+
+.shortDescriptions .description {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0353A4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 3.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0rem 3rem;
+  padding: 2rem;
+}
+
+.shortDescriptions .description p,
+.shortDescriptions .description h2 {
+  color: black;
+  text-align: center;
+}
+
+.shortDescriptions .description h2 {
+  padding: 1rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.shortDescriptions .description p {
+  font-size: 1.25rem;
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+}
+
+.gridContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  font-family: "Lato", sans-serif;
+}
+
+.gridContainer .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.gridContainer .row img {
+  width: 100%;
+  min-height: 200px;
+}
+
+.gridContainer .row .fullDesc {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 200px;
+  width: 100%;
+}
+
+.gridContainer .row .fullDesc .wrapper {
+  margin: 0rem 2.5rem;
+  padding: 4rem;
+  text-align: center;
+}
+
+.gridContainer .row .fullDesc h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.gridContainer .row .fullDesc p {
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+/*# sourceMappingURL=Home.module.css.map */

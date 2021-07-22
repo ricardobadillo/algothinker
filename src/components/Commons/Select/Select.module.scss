@@ -1,0 +1,65 @@
+.customSelect {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  padding: 1rem 0rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .option {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    $option-height: 30px;
+
+    .selectedOption {
+      width: 100%;
+      height: $option-height;
+      background-color: white;
+      padding-left: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .dropdownIcon {
+        display: flex;
+        font-size: 2rem;
+      }
+    }
+
+    .hiddenOption {
+      display: none;
+    }
+
+    .dropdownContent {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      z-index: 9999;
+      top: $option-height;
+
+      .dropdownOption {
+        padding: 0.5rem;
+        background-color: white;
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        justify-content: space-between;
+
+        &.selected {
+          display: flex;
+          justify-content: space-between;
+          background-color: #0466c8;
+          color: white;
+        }
+
+        &:hover {
+          background-color: darken(white, 30);
+        }
+      }
+    }
+  }
+}

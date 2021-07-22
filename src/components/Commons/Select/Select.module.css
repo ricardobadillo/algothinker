@@ -1,0 +1,99 @@
+.customSelect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  padding: 1rem 0rem;
+}
+
+.customSelect:hover {
+  cursor: pointer;
+}
+
+.customSelect .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.customSelect .option .selectedOption {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customSelect .option .selectedOption .dropdownIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+}
+
+.customSelect .option .hiddenOption {
+  display: none;
+}
+
+.customSelect .option .dropdownContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: absolute;
+  z-index: 9999;
+  top: 30px;
+}
+
+.customSelect .option .dropdownContent .dropdownOption {
+  padding: 0.5rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.customSelect .option .dropdownContent .dropdownOption.selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #0466c8;
+  color: white;
+}
+
+.customSelect .option .dropdownContent .dropdownOption:hover {
+  background-color: #b3b3b3;
+}
+/*# sourceMappingURL=Select.module.css.map */

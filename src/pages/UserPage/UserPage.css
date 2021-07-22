@@ -1,0 +1,90 @@
+.contenedor_usuario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor_usuario .usuario_left, .contenedor_usuario .usuario_right {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 40px 0px rgba(186, 186, 186, 0.5);
+          box-shadow: 5px 5px 40px 0px rgba(186, 186, 186, 0.5);
+  margin: 2rem 3rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.usuario_left .usuario_img {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+}
+
+.usuario_left .usuario_img div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.usuario_left .usuario_img div h2 {
+  text-align: start;
+  letter-spacing: .1rem;
+}
+
+.usuario_left .usuario_info h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.usuario_left .usuario_info p {
+  padding: 1rem;
+  text-align: center;
+}
+
+.usuario_left .usuario {
+  border-radius: 150px;
+}
+
+.usuario_right {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.usuario_right h2 {
+  margin: 1rem 0rem;
+  text-align: center;
+}
+
+.usuario_right .input {
+  margin: auto;
+  margin: 1rem 0rem;
+  padding: .25rem;
+}
+
+.button {
+  background-color: #0466C8;
+  border: #0466C8 solid;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin: 1rem 0rem;
+  outline: none;
+  padding: .5rem 1rem;
+}
+/*# sourceMappingURL=UserPage.css.map */

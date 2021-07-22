@@ -1,0 +1,99 @@
+.contenedor_test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.contenedor_titulo {
+  font-size: 2.5rem;
+  margin: 2rem 1.5rem;
+}
+
+.contenido_test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenido_test .contenido_test_left {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.contenido_test .contenido_test_left .title_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0rem 1rem;
+  padding-top: .75rem;
+}
+
+.contenido_test .contenido_test_left .title_div .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenido_test .contenido_test_left .title_div .difficulty {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenido_test .contenido_test_left .title_div .difficulty h4 {
+  background-color: #0466C8;
+  border: #0466C8 solid;
+  border-radius: 10px;
+  padding: 0rem 1rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.contenido_test .contenido_test_left .enunciado_div .enunciado {
+  border: lightgray solid;
+  border-radius: 5px;
+  font-size: .85rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.contenido_test .contenido_test_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.contenido_test .contenido_test_right .nose {
+  background-color: #0466C8;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.contenido_test .contenido_test_right .nose p {
+  color: white;
+}
+
+.contenido_test .contenido_test_right .code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  margin: 0rem 1rem;
+}
+/*# sourceMappingURL=index.css.map */

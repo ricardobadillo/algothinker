@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container h1 {
+    display: flex;
+    font-size: 2.5rem;
+}
+
+.presentacion {
+    display: flex;
+}
+
+.presentacion_p {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    justify-content: space-between;
+    line-height: 2rem;
+    margin: 2rem;
+    text-align: justify;
+}
+
+.presentacion_img {
+    background-color: rgb(253, 253, 253);
+    border: rgb(245, 245, 245) solid;
+    display: flex;
+    flex-basis: 40%;
+    padding: 0;
+}
+
+.img {
+    width: 100%;
+}  
+
+@media (max-width: 780px) {
+
+    img {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+    }
+
+    .presentacion_p {
+        line-height: 1.5rem;
+        text-align: left;
+    }
+
+    
+.presentacion_p p:nth-child(2) {
+    margin-top: 1.5rem;
+}
+
+    .presentacion_img {
+        margin: 0rem 1rem;
+        margin-top: 2rem;
+    }
+
+    .presentacion_p_mensaje {
+        margin-top: 2rem;
+    }
+}
+
+.bigo-icon {
+    margin-right: .5rem;
+    font-size: 2.5rem;
+}
+
+/* BARRA. */
+
+.barra {
+    background-color: #023E7D;
+    padding: 2rem;
+    width: 100%;
+}
+
+.barra_blanca {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    margin: 0 auto;
+    margin: 0rem 5rem;
+}
+
+.barra_blanca_div {
+    align-items: center;
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    padding: 1rem 0rem;
+}
+
+.barra_blanca p {
+    color: #023E7D;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.barra_icon {
+    font-size: 4rem;
+    margin-left: 2rem;
+}
+
+@media (max-width: 780px) {
+    .barra_blanca {
+        border-radius: 10px;
+        padding: 0rem;
+        margin: 0rem 0rem;
+    }
+
+    .barra_blanca p {
+        font-size: 1rem;
+        font-weight: 0;
+        text-align: center;
+    }
+
+    .barra_icon {
+        align-items: center;
+        font-size: 1.75rem;
+        justify-content: center;
+        margin-left: .5rem;
+    }
+}

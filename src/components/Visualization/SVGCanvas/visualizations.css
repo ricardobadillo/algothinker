@@ -1,0 +1,37 @@
+.array-item {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: white;
+  color: black;
+  stroke: black;
+}
+
+.array-item.burbuja-mayor,
+.array-item.seleccion-mas-bajo,
+.array-item.busqueda-lineal-item,
+.array-item.busqueda-binaria-item {
+  fill: #413ee8;
+  color: white;
+  font-weight: bold;
+  stroke: none;
+}
+
+.array-item.burbuja-comparacion,
+.array-item.seleccion-escaneo,
+.array-item.busqueda-binaria-item-borrado {
+  fill: #e83e41;
+  color: white;
+  font-weight: bold;
+  stroke: none;
+}
+
+.array-item.burbuja-ordenado,
+.array-item.seleccion-ordenado,
+.array-item.insercion-ordenado {
+  stroke-width: 2;
+}
+
+.array-item.insercion-comparacion {
+  stroke: #0466c8;
+  stroke-width: 2;
+}

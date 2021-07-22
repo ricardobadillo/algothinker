@@ -1,0 +1,39 @@
+%navbarStyles {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  z-index: 100;
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.5s ease;
+
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    li {
+      padding: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.navbar {
+  @extend %navbarStyles;
+  background-color: transparent;
+}
+
+.navbarActive {
+  @extend %navbarStyles;
+  background-color: #002855;
+}
