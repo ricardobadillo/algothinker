@@ -7,6 +7,7 @@ import TopicIntroduction from 'pages/TopicIntroduction';
 import TopicLesson from 'pages/TopicLesson';
 import Visualization from 'pages/Visualization';
 import TopicTest from "pages/TopicTest";
+import UserPage from 'pages/UserPage/UserPage';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/login' component={Login} />
         <Route path='/signup' component={Signup} />
         <Route path='/intro' component={Introduction} />
+        <Route path='/userpage' component={UserPage} />
         <Route exact path='/:category/:topic' component={TopicIntroduction} />
         <Route exact path='/:category/:topic/leccion' component={TopicLesson} />
         <Route
